@@ -6,4 +6,4 @@
   :eval-in-leiningen true
   :repositories [["releases" {:url "https://clojars.org/" :creds :gpg}]]
   :scm {:name "git"
-        :url "https://github.com/danielsz/back-end-template")
+        :url "https://github.com/danielsz/back-end-template"})
