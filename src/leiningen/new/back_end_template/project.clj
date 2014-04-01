@@ -1,4 +1,4 @@
-(defproject reloaded2/{{ns-name}} "0.1.0-SNAPSHOT"
+(defproject {{ns-name}} "0.1.0-SNAPSHOT"
   :description "TODO"
   :url "TODO"
   :license {:name "Eclipse Public License"
@@ -16,11 +16,11 @@
   :profiles {:dev {:dependencies [[ring-mock "0.1.5"]]
                    :source-paths ["dev"]
                    :env {:http-port 3000 :trace-headers true
-                         :db-url "datomic:mem://localhost:4334/twitter-fu"}}
+                         :db-url "datomic:mem://localhost:4334/"{{ns-name}}}}
              :production {:env {:http-port 8000 :trace-headers false
                                 :repl-port 8001
-                                :db-url "datomic:free://localhost:4334/twitter-fu"
-                                :mongo-url "mongodb://heroku_app11242477:nmtrf5p3goevlaacbjcvlqa419@ds049237.mongolab.com:49237/heroku_app11242477"}}
+                                :db-url "datomic:free://localhost:4334/"{{ns-name}}
+                                :mongo-url "mongodb://heroku_url"}}
              :uberjar {:aot :all}}
   :resource-paths ["resources"]
   :main {{ns-name}}.core)
