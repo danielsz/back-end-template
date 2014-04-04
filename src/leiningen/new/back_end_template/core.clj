@@ -12,6 +12,6 @@
 (defn -main 
   []
   "Start the application"
-  (alter-var-root #'system (constantly (prod-system)))) 
+  (alter-var-root #'system (fn [_] (component/start (prod-system))))) 
 
 

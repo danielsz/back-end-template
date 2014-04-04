@@ -1,4 +1,4 @@
-(defproject back-end-template/lein-template "0.1.2"
+(defproject back-end-template/lein-template "0.1.3"
   :description "Created with lein-create-template"
   :url "https://github.com/danielsz/back-end-template"
   :license {:name "Eclipse Public License"
