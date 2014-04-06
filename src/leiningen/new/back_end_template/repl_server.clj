@@ -1,4 +1,4 @@
-(ns {{ns-name}}.wiring.components.repl-server
+(ns {{ns-name}}.framework.components.repl-server
   (:require [com.stuartsierra.component :as component]
             [clojure.tools.nrepl.server :refer [start-server stop-server]]))
 

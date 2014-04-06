@@ -1,5 +1,5 @@
-(ns {{ns-name}}.wiring.components.web-server-test
-  (:require [{{ns-name}}.wiring.components.web-server :refer [new-web-server]]
+(ns {{ns-name}}.framework.components.web-server-test
+  (:require [{{ns-name}}.framework.components.web-server :refer [new-web-server]]
    [com.stuartsierra.component :as component]
    [clojure.test :refer [deftest is]]))
 

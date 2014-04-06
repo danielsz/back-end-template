@@ -5,7 +5,7 @@
    [clojure.string :as str]
    [clojure.test :as test]
    [clojure.tools.namespace.repl :refer (refresh refresh-all)]
-   [{{ns-name}}.wiring.application :refer [dev-system]]
+   [{{ns-name}}.framework.application :refer [dev-system]]
    [com.stuartsierra.component :as component]))
 
 (def system

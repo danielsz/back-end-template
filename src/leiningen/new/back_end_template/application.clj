@@ -1,7 +1,7 @@
-(ns {{ns-name}}.wiring.application
+(ns {{ns-name}}.framework.application
   (:require 
    [com.stuartsierra.component :as component]
-   ({{ns-name}}.wiring.components 
+   ({{ns-name}}.framework.components 
     [web-server :refer [new-web-server]]
     [repl-server :refer [new-repl-server]]
     [datomic :refer [new-datomic-db]]

@@ -1,5 +1,5 @@
-(ns {{ns-name}}.webapp.handler-test
-  (:require [{{ns-name}}.webapp.handler :refer :all]
+(ns {{ns-name}}.transport.http.handler-test
+  (:require [{{ns-name}}.transport.http.handler :refer :all]
             [clojure.test :refer :all]
             [ring.mock.request :refer :all]))
 

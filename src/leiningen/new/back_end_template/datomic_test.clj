@@ -1,5 +1,5 @@
-(ns {{ns-name}}.wiring.components.datomic-test
-  (:require [{{ns-name}}.wiring.components.datomic :refer [new-datomic-db]]
+(ns {{ns-name}}.framework.components.datomic-test
+  (:require [{{ns-name}}.framework.components.datomic :refer [new-datomic-db]]
    [com.stuartsierra.component :as component]
    [datomic.api :as d]
    [clojure.test :refer [deftest is]]))

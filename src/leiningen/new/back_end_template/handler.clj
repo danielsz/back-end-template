@@ -1,6 +1,6 @@
-(ns {{ns-name}}.webapp.handler 
+(ns {{ns-name}}.transport.http.handler 
   (:require 
-   ({{ns-name}}.webapp [resources :refer [bar]])
+   ({{ns-name}}.transport.http [resources :refer [bar]])
    [liberator.dev :refer [wrap-trace]]
    [compojure.core :refer [defroutes GET]]
    [ring.middleware.resource :refer [wrap-resource]]   

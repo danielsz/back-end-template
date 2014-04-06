@@ -1,4 +1,4 @@
-(ns {{ns-name}}.wiring.components.web-server
+(ns {{ns-name}}.framework.components.web-server
   (:require ({{ns-name}}.webapp [handler :refer [app app-with-debugging]])
             [com.stuartsierra.component :as component]
             [ring.adapter.jetty :refer [run-jetty]]))

@@ -1,4 +1,4 @@
-(ns {{ns-name}}.wiring.components.datomic
+(ns {{ns-name}}.framework.components.datomic
   (:require [com.stuartsierra.component :as component]
             [datomic.api :as d]))
 

@@ -1,4 +1,4 @@
-(ns {{ns-name}}.wiring.components.mongo
+(ns {{ns-name}}.framework.components.mongo
   (:require [com.stuartsierra.component :as component]
             [monger.core :as mg]))
 

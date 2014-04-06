@@ -1,4 +1,4 @@
-(ns {{ns-name}}.webapp.resources
+(ns {{ns-name}}.http.transport.resources
   (:require [liberator.core :refer [resource defresource]]))
 
 (defresource bar

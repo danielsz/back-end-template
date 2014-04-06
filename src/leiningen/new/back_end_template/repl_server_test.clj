@@ -1,5 +1,5 @@
-(ns {{ns-name}}.wiring.components.repl-server-test
-  (:require [{{ns-name}}.wiring.components.repl-server :refer [new-repl-server]]
+(ns {{ns-name}}.framework.components.repl-server-test
+  (:require [{{ns-name}}.framework.components.repl-server :refer [new-repl-server]]
    [com.stuartsierra.component :as component]
    [clojure.test :refer [deftest is run-tests]]
    [clojure.tools.nrepl :as repl]))
