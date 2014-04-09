@@ -1,6 +1,6 @@
 (ns {{ns-name}}.remote.commands
   (:require ({{ns-name}}.remote [monitor :refer [send-command]])
-            ({{ns-name}}.wiring [utilities :refer [stringify-form]])
+            ({{ns-name}}.framework [utilities :refer [stringify-form]])
             [com.stuartsierra.component :as component]))
 
 
