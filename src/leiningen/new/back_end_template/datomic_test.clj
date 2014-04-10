@@ -10,7 +10,6 @@
  
 (deftest datomic-lifecycle
   (alter-var-root #'datomic-db component/start)
-  (is (:connection datomic-db) "DB connection has been added to component")
-  (is (d/db (:connection datomic-db)) "DB value received from connection")
+  (is (:db datomic-db) "DB as a value has been added to component")
   (is (d/delete-database uri) "Database deleted")  
   (alter-var-root #'datomic-db component/stop))
