@@ -13,7 +13,7 @@
   (component/system-map
    :datomic-db (new-datomic-db (env :db-url))
    :mongo-db (new-mongo-db)
-   :web (new-web-server (env :http-port) (env :trace-headers))))
+   :web (new-web-server (Integer. (env :http-port)) (env :trace-headers))))
 
 
 (defn prod-system []
@@ -23,6 +23,6 @@
      :datomic-db (new-datomic-db (env :db-url))
      :mongo-db (new-mongo-db (env :mongo-url))
      :web (new-web-server (env :http-port) (env :trace-headers))
-     :repl-server (new-repl-server (env :repl-port))))
+     :repl-server (new-repl-server (Integer. (env :repl-port)))))
 
 

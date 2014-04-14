@@ -5,7 +5,7 @@
 (defrecord ReplServer [port server]
   component/Lifecycle
   (start [component]
-    (assoc component :server (start-server :port (Integer. port))))
+    (assoc component :server (start-server :port port)))
   (stop [component]
     (when server
       (stop-server server)

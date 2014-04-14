@@ -4,10 +4,9 @@
             ({{ns-name}}.wiring 
              [application :refer [prod-system]])))
 
-(def system
-  "A Var containing an object representing the application under
-  production."
-  nil)
+"A Var containing an object representing the application under
+  production. Unbound so that we call (system-map) at runtime"
+(def system)
 
 (defn -main 
   []

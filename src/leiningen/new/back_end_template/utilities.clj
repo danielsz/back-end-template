@@ -6,5 +6,9 @@
     `(str ~form)))
 
 
+(defn system-map []
+  (if (bound? (ns-resolve '{{ns-name}}.core 'system))
+    (deref (ns-resolve '{{ns-name}}.core 'system))
+    (deref (ns-resolve 'user 'system))))
 
 

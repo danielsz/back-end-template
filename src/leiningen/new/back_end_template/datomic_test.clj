@@ -4,7 +4,7 @@
    [datomic.api :as d]
    [clojure.test :refer [deftest is]]))
 
-(def uri "datomic:mem://localhost:4334/twitter-fu-test")
+(def uri (str (env :db-url) "-test"))
 
 (def datomic-db (new-datomic-db uri))
  
