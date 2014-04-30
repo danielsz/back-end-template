@@ -14,7 +14,7 @@
              ["src/{{sanitized}}/framework/components/datomic.clj" (render "datomic.clj" data)]
              ["dev/user.clj" (render "user.clj" data)]
              ["src/{{sanitized}}/framework/components/mongo.clj" (render "mongo.clj" data)]
-             ["src/{{sanitized}}/transport/http/resources.clj" (render "resources.clj" data)]
+             ["src/{{sanitized}}/api/resources.clj" (render "resources.clj" data)]
              ["src/{{sanitized}}/framework/components/repl_server.clj" (render "repl_server.clj" data)]
              ["src/{{sanitized}}/framework/application.clj" (render "application.clj" data)]
              ["src/{{sanitized}}/transport/http/handler.clj" (render "handler.clj" data)]
