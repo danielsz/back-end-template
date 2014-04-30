@@ -16,10 +16,10 @@
   :profiles {:dev {:dependencies [[ring-mock "0.1.5"]]
                    :source-paths ["dev"]
                    :env {:http-port 3000 :trace-headers true
-                         :db-url "datomic:mem://localhost:4334/"{{ns-name}}}}
+                         :db-url "datomic:mem://localhost:4334/{{ns-name}}"}}
              :production {:env {:http-port 8000 :trace-headers false
                                 :repl-port 8001
-                                :db-url "datomic:free://localhost:4334/"{{ns-name}}
+                                :db-url "datomic:free://localhost:4334/{{ns-name}}"
                                 :mongo-url "mongodb://heroku_url"}}
              :uberjar {:aot :all}}
   :resource-paths ["resources"]
