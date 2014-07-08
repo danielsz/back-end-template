@@ -6,14 +6,12 @@
   component/Lifecycle
   (start [component]
     (if uri 
-      (do (mg/connect-via-uri! uri)
-          (assoc component :db (mg/get-db)))
+      (let [{:keys [conn db]} (mg/connect-via-uri uri)]
+        (assoc component :db db))
       (let [conn (mg/connect)]
         (assoc component :db (mg/get-db conn "mongo-dev")))))
   (stop [component]
-    (if uri
-      (assoc component :db (mg/disconnect!))
-      (assoc component :db nil))))
+    (assoc component :db nil)))
 
 (defn new-mongo-db
   ([]
