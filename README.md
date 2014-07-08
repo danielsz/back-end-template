@@ -13,7 +13,7 @@ Includes out-of-the box support for:
 
 ## Usage
 
-   $ lein new back-end-template my-app
+    $ lein new back-end-template my-app
 
 Define your environments in `application.clj`
 
