@@ -17,11 +17,11 @@ Includes out-of-the box support for:
 
 Define your environments in `application.clj`
 
-During development, type `(user/start)`, `(user/stop)` and `(user/reset)` in the REPL.
+During development, type `(user/go)`, `(user/stop)` and `(user/reset)` in the REPL.
 
 In production, the `-main` entry point takes care of starting the system.
 
-In both environments, the components are accessible from the system map, which you call with `(system-map)`.
+In both environments, the components are accessible from the system map, which you can retrieve with `(system-map)` (after referring it from the `my-app.framework.utilities` namespace).
 
 That's it!
 
