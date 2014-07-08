@@ -2,7 +2,8 @@
   (:require [{{ns-name}}.framework.components.datomic :refer [new-datomic-db]]
    [com.stuartsierra.component :as component]
    [datomic.api :as d]
-   [clojure.test :refer [deftest is]]))
+   [clojure.test :refer [deftest is]]
+   [environ.core :refer [env]]))
 
 (def uri (str (env :db-url) "-test"))
 

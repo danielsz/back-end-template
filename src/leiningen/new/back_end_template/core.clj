@@ -1,7 +1,7 @@
 (ns {{ns-name}}.core
   (:gen-class)
   (:require [com.stuartsierra.component :as component]
-            ({{ns-name}}.wiring 
+            ({{ns-name}}.framework 
              [application :refer [prod-system]])))
 
 "A Var containing an object representing the application under
